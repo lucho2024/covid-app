@@ -2,12 +2,13 @@
 import React from 'react';
 import {Button, Text, TouchableWithoutFeedback} from 'react-native';
 import {useNavigation} from '@react-navigation/native';
+import { Title } from '../components/Title';
 
 export const Main = () => {
   const navigation = useNavigation();
   return (
-    <TouchableWithoutFeedback>
-      <Text style={{width: 80, height: 100, backgroundColor: 'red'}}>Main</Text>
-    </TouchableWithoutFeedback>
+    <>
+    <Title title="Datos actuales Covid"/>
+    </>
   );
 };
