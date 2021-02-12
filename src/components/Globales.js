@@ -86,17 +86,16 @@ const styles = StyleSheet.create({
     height: '20%',
     margin: 0,
     padding: 5,
-
     display: 'flex',
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
+
   },
 
   text: {
     color: '#E30041',
     fontWeight: 'bold',
-
     backgroundColor: 'white',
     width: '40%',
     height: '100%',
@@ -105,6 +104,14 @@ const styles = StyleSheet.create({
     borderTopLeftRadius: 12,
     fontSize: 15,
     borderBottomLeftRadius: 12,
+    shadowColor: "#000",
+    shadowOffset:{
+    width: 0,
+    height: 3,
+    },
+    shadowOpacity: 0.27,
+    shadowRadius: 4.65,
+    elevation: 6,
   },
 
   text_num: {
@@ -119,5 +126,14 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     color: 'white',
     fontSize: 25,
+    shadowColor: "#000",
+    shadowOffset:{
+    width: 0,
+    height: 3,
+    },
+    shadowOpacity: 0.27,
+    shadowRadius: 4.65,
+    elevation: 6,
   },
+  
 });
