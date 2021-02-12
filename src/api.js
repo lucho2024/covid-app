@@ -1,6 +1,4 @@
 /* eslint-disable prettier/prettier */
-import React,{useEffect,useState} from 'react';
-import {Text} from 'react-native';
 import axios from 'axios';
 
 class Api {

@@ -28,13 +28,13 @@ export const Globales = () => {
 
         <View style={styles.contenedores}>
           <Text style={styles.text}>Casos nuevos</Text>
-          <Text style={[styles.text_num, {width: '50%'}]}>
+          <Text style={[styles.text_num, {width: '40%'}]}>
             {data?.datos_globales?.casos_nuevos}
           </Text>
         </View>
 
         <View style={styles.contenedores}>
-          <View style={styles.text}>
+          <View style={[styles.text,{paddingTop: 20}]}>
             <Text
               style={{
                 color: '#E30041',
@@ -43,17 +43,19 @@ export const Globales = () => {
               }}>
               Muertes
             </Text>
+           
             <Text
               style={{
                 color: '#E30041',
                 textAlign: 'center',
                 fontWeight: 'bold',
+                marginTop: 10,
               }}>
-              M. Nuevas
+              Muertes nuevas
             </Text>
           </View>
 
-          <View style={[styles.text_num, {width: '40%'}]}>
+          <View style={[styles.text_num, {width: '30%'}]}>
             <Text
               style={{color: 'white', textAlign: 'center', fontWeight: 'bold'}}>
               {data?.datos_globales?.muertes}
@@ -96,17 +98,17 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
 
     backgroundColor: 'white',
-    width: '30%',
+    width: '40%',
     height: '100%',
     textAlign: 'center',
-    paddingTop: 20,
+    paddingTop: 30,
     borderTopLeftRadius: 12,
     fontSize: 15,
     borderBottomLeftRadius: 12,
   },
 
   text_num: {
-    width: '60%',
+    width: '50%',
     height: '100%',
     paddingTop: 20,
     backgroundColor: '#6E001F',

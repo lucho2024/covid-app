@@ -10,8 +10,8 @@ const styles = StyleSheet.create({
   titles: {
     color: 'white',
     fontSize: 40,
-    marginTop: 10,
-
+    fontWeight: 'bold',
     textAlign: 'center',
+    
   },
 });
