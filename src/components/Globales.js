@@ -18,7 +18,27 @@ export const Globales = () => {
 
   return (
     <>
-      <View style={styles.contenedor_g}>
+      <View style={styles.container}>
+        <View style={styles.box}>
+          <Text style={[styles.numberText,{fontSize: 36,}]}>{data?.datos_globales?.casos_de_coronavirus} 100,352,222</Text>
+          <Text style={styles.texts}>Casos actuales</Text>
+        </View>
+        <View style={styles.box}>
+          <Text style={[styles.numberText,{fontSize: 30,}]}>{data?.datos_globales?.casos_de_coronavirus}80,352,222</Text>
+          <Text style={styles.texts}>Casos nuevos</Text>
+        </View>
+        <View style={[styles.box,{flexDirection: 'row', justifyContent: 'space-evenly'}]}>
+          <View style={styles.boxDeaths}>
+            <Text style={[styles.numberText,{fontSize: 24,}]}>{data?.datos_globales?.casos_de_coronavirus}8,025,222</Text>
+            <Text style={styles.texts}>Muertes</Text>
+          </View>
+          <View style={styles.boxNewDeaths}>
+            <Text style={[styles.numberText,{fontSize: 24,}]}>{data?.datos_globales?.casos_de_coronavirus}352,222</Text>
+            <Text style={styles.texts}>Muertes nuevas</Text>
+          </View>
+        </View>
+      </View>
+      {/*  <View style={styles.contenedor_g}>
         <View style={styles.contenedores}>
           <Text style={styles.text}>Casos actuales</Text>
           <Text style={styles.text_num}>
@@ -66,13 +86,44 @@ export const Globales = () => {
             </Text>
           </View>
         </View>
-      </View>
+      </View> */}
     </>
   );
 };
 
 const styles = StyleSheet.create({
-  contenedor_g: {
+
+  container:{
+    height: '70%',
+    width: '100%',
+    display: 'flex',
+    position: 'absolute',
+    bottom: 0,
+    justifyContent:'space-evenly'
+  },
+  
+  box:{
+    width: '100%',
+    height: '30%',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center'
+
+  },
+  texts:{
+    color: '#D9D9D9',
+    fontSize: 15,
+    textAlign: 'center',
+    fontFamily: 'SourceCodePro-Regular',
+
+  },
+  numberText:{
+    color: 'white',
+    textAlign: 'center',
+    fontFamily: 'SourceCodePro-Bold',
+  }
+
+  /*   contenedor_g: {
     width: '100%',
     height: '70%',
     display: 'flex',
@@ -135,5 +186,5 @@ const styles = StyleSheet.create({
     shadowRadius: 4.65,
     elevation: 6,
   },
-  
+   */
 });

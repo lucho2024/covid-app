@@ -5,8 +5,10 @@ import {Main} from './src/screens/Main';
 import {Continents} from './src/screens/Continents';
 import {Countries} from './src/screens/Countries';
 import {Indexer} from './src/screens/Indexer';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
 const Stack = createStackNavigator();
+const Tab = createBottomTabNavigator();
 
 const App = () => {
   return (
@@ -17,6 +19,7 @@ const App = () => {
           component={Indexer}
           options={{
             headerShown: false,
+            
           }}
         />
       </Stack.Navigator>
