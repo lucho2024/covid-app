@@ -5,7 +5,7 @@ import {useNavigation} from '@react-navigation/native';
 import {Title} from '../components/Title';
 import {Globales} from '../components/Globales';
 import LinearGradient from 'react-native-linear-gradient';
-
+import {StatusBar} from 'react-native'
 
 export const Main = () => {
 
@@ -15,6 +15,7 @@ export const Main = () => {
      <ImageBackground source={require('../../assets/img/imagenPrincipal.png')} style={styles.backgroundImage}>
         <View style={styles.container}>
           <View style={styles.boxTitle}>
+            <StatusBar barStyle='light-content' backgroundColor='#7D0023'/>
             <Title title="DATOS ACTUALES"/>
             <Text style={styles.textCovid}>COVID19</Text>
           </View>
@@ -41,7 +42,8 @@ const styles = StyleSheet.create({
     fontSize:38,
     color: 'white',
     textAlign: 'center',
-    fontFamily: 'SourceCodePro-Bold'
+    fontFamily: 'SourceCodePro-Bold',
+    margin: -16,
   },
   backgroundImage: {
     flex: 1,

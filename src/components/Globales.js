@@ -19,6 +19,7 @@ export const Globales = () => {
   return (
     <>
       <View style={styles.container}>
+
         <View style={styles.box}>
           <Text style={[styles.numberText,{fontSize: 36,}]}>{data?.datos_globales?.casos_de_coronavirus} 100,352,222</Text>
           <Text style={styles.texts}>Casos actuales</Text>
