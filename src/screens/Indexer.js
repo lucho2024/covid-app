@@ -37,13 +37,18 @@ export const Indexer = () => {
           activeTintColor: '#9E002D',
           inactiveTintColor: 'gray',
           showLabel: false,
-          
+          style: {
+            backgroundColor: "white",
+            height: 60,
+            borderTopLeftRadius: 10,
+            borderTopRightRadius: 10,
+          },
         }}
 
         initialRouteName={"Main"}
 
       >
-        <Tab.Screen name="Continents" component={Continents} />
+        <Tab.Screen name="Continents" component={Continents}/>
 
         <Tab.Screen  name="Main" component={Main} />
         <Tab.Screen name="Countries" component={Countries} />
