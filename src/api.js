@@ -5,7 +5,7 @@ class Api {
 
 
     get_data = async() =>{
-        const resp = await axios.get('http://192.168.1.58/apicoronavirus/get_index.php')
+        const resp = await axios.get('http://locombia.info/ApiCovid.php')
 
         return (resp.data)
 

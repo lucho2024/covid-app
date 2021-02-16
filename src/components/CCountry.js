@@ -2,31 +2,34 @@ import React, {useEffect, useState} from 'react';
 import {Text, View, StyleSheet} from 'react-native';
 
 export const CCountry = (props) => {
+  const [expanded, setExpanded] = React.useState(true);
+
   return (
-    <View style={styles.container}>
-      <View>
-        <Text>{props.pais.numero_pais}</Text>
-      </View>
 
-      <View>
-        <Text>{props.pais.nombre_pais}</Text>
-      </View>
+    <View>
+       <View>
+          <Text></Text>
+        </View>
 
-      <View>
-        <Text>Casos</Text>
-        <Text>{props.pais.totalcasos_pais}</Text>
-      </View>
+        <View>
+          <Text>{props.pais.nombre_pais}</Text>
+        </View>
 
-      <View>
-        <Text>Muertes</Text>
-        <Text>{props.pais.totalmuerte_pais}</Text>
-      </View>
+        <View>
+          <Text>Casos</Text>
+          <Text>{props.pais.totalcasos_pais}</Text>
+        </View>
 
-      <View>
-        <Text>Recuperados</Text>
-        <Text>{props.pais.totalrecuperados_pais}</Text>
-      </View>
-    </View>
+        <View>
+          <Text>Muertes</Text>
+          <Text>{props.pais.totalmuerte_pais}</Text>
+        </View>
+
+        <View>
+          <Text>Recuperados</Text>
+          <Text>{props.pais.totalrecuperados_pais}</Text>
+        </View> 
+    </View>    
   );
 };
 
