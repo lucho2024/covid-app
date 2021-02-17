@@ -1,6 +1,6 @@
 /* eslint-disable prettier/prettier */
 import React, {useEffect, useState} from 'react';
-import {Text, View, StyleSheet} from 'react-native';
+import {Text, View, StyleSheet, TouchableHighlight} from 'react-native';
 import Api from '../api';
 
 export const Globales = () => {
@@ -18,6 +18,7 @@ export const Globales = () => {
 
   return (
     <>
+
       <View style={styles.container}>
         <View style={styles.box}>
           <Text style={[styles.numberText, {fontSize: 36}]}>

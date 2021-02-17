@@ -1,6 +1,6 @@
 /* eslint-disable prettier/prettier */
 import React from 'react';
-import {Text, View, StyleSheet} from 'react-native';
+import {Text, View, StyleSheet, TouchableHighlight} from 'react-native';
 import { Title } from '../components/Title';
 import LinearGradient from 'react-native-linear-gradient';
 
@@ -10,6 +10,12 @@ export const Continents = () => {
       <View>
         <Title title="Datos actuales por continente"/>
       </View>
+      <TouchableHighlight onPress={console.log('pruebaentro')}>
+      <View style={[styles.ladronchiquito,{width:'30%',position:'absolute',right:2,}]}>
+        <Text style={styles.ladrontext}> </Text>
+        <Text style={[styles.ladrontext,{color:'white', backgroundColor:'#C70039' ,padding:5, borderRadius:5,fontWeight:'bold',textAlign: 'right', marginTop:10}]}> Más </Text>
+      </View>
+    </TouchableHighlight> 
     </LinearGradient>
   );
 };
