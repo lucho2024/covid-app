@@ -13,8 +13,8 @@ export const Title = ({title}) => {
 const styles = StyleSheet.create({
   titles: {
     color: 'white',
-    fontSize: 16,
+    fontSize: 20,
     textAlign: 'center',
-    fontFamily: 'SourceCodePro-Bold'  
+    fontFamily: 'SourceCodePro-Bold',
   },
 });

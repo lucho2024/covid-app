@@ -14,8 +14,9 @@ export const Countries = () => {
       end={{x: 0, y: 0.8}}
       colors={['rgba(125,0,35,1)', 'rgba(62,0,18,1)']}
       style={styles.linearGradient}>
-      <View>
-        <Title title="Datos actuales por pais" />
+      <View style={{paddingTop: 50}}>
+        <Title title="Datos actuales" />
+        <Title title="por pais"></Title>
         <CCountries></CCountries>
       </View>
     </LinearGradient>
