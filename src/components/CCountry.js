@@ -1,13 +1,10 @@
 import React, {useEffect, useState} from 'react';
-import {Button,Text, View, StyleSheet, TouchableHighlight} from 'react-native';
+import {Text, View, StyleSheet} from 'react-native';
 import {List} from 'react-native-paper';
-import {useNavigation} from '@react-navigation/native';
-
 
 export const CCountry = (props) => {
   const [expanded, setExpanded] = React.useState(true);
   const handlePress = () => setExpanded(!expanded);
-  const navigation = useNavigation();
 
   return (
     <List.Section>
@@ -41,12 +38,6 @@ export const CCountry = (props) => {
           </View>
         )}>
         <View style={styles.ladronGrande}>
-          <TouchableHighlight onPress={console.log('pruebaentro')}>
-            <View style={[styles.ladronchiquito,{width:'30%',position:'absolute',right:2,}]}>
-              <Text style={styles.ladrontext}> </Text>
-              <Text style={[styles.ladrontext,{color:'white', backgroundColor:'#C70039' ,padding:5, borderRadius:5,fontWeight:'bold',textAlign: 'right', marginTop:10}]}> Más </Text>
-            </View>
-          </TouchableHighlight> 
           <View style={styles.ladronchiquito}>
             <Text style={styles.ladrontext}>Casos activos</Text>
             <Text style={styles.ladrontext}>
