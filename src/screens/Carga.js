@@ -1,11 +1,13 @@
 /* eslint-disable prettier/prettier */
 import React from 'react';
-import {Text} from 'react-native';
+import {Text, ImageBackground} from 'react-native';
 
 export const Carga = () => {
   return (
     <>
-      <Text>Carga</Text>
+      <ImageBackground
+        style={{flex: 1}}
+        source={require('../../assets/img/fondo.png')}></ImageBackground>
     </>
   );
 };
